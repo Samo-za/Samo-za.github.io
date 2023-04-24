@@ -28,6 +28,8 @@ aside {
 p, [for="abtype"] {
 	margin-bottom: 0;
 	margin-top: 2rem;
+	font-family: 'Tillana', cursive;
+	font-size: 1.2rem;
 }
 fieldset {
 	border: 1px solid black;
@@ -45,6 +47,8 @@ legend {
 label {
 	display: block;
 	padding-bottom: 0.3rem;
+	font-family: 'Tillana', cursive;
+	font-size: 1.2rem;
 }
 textarea {
 	height: 10rem;
@@ -78,4 +82,8 @@ input:not([type="radio"]):not([type="checkbox"]), textarea, select {
 h1, h3 {
 	font-family: 'Tillana', cursive;
 	font-size: 1.5rem;
+}
+address {
+	font-family: 'Tillana', cursive;
+	font-size: 1.2rem;
 }
