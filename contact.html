@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="no bckgrndcl">
+                <a href="index.html"><img src="images/logo.png" alt="CK's blog"></a>
+            </div>
+            <div>
+                <h1>KC's blog</h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my hobbies.html">My hobbies</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <h2>Contact us</h2>
+        
+    <section>
+    <form action="">
+        <fieldset>
+            <legend>Your contact information</legend>
+                <label for="name">Your name</label>
+                    <input type="text" id="name" name="name">
+                <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone">
+                <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+        </fieldset>
+            
+        <fieldset>
+            <legend>Your query</legend>
+                <label for="mydate">On which date would you like to arrange a meeting?</label>
+                    <input type="date" id="mydate">
+            <br>
+                <p>Which type of contact do you preffer?</p>
+                <label>
+                    <input type="radio" name="contacttype" value="phone">Phone</label> 
+                <label>
+                    <input type="radio" name="contacttype" value="email">Email</label> 
+                <label>
+                    <input type="radio" name="contacttype" value="live" checked>In person</label>
+            <br>
+                
+                <label for="comments"> Enter your query
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Place for your ideas"></textarea></label>
+            <br>
+                <label for="subscribe"><input type="checkbox" value="checkbox" id="subscribe" checked>Add me to your email list!</label>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+    </section>
+        <br><br>
+        <footer>
+            <p>Visit my <a href="index.html">Home</a> page, <a href="my hobbies.html">My hobbies</a> page and my <a href="about.html">About</a> page.</p>
+                
+            <a href="#top">back to TOP</a>
+        </footer>
+
+    </div>
+</body>
+</html>
