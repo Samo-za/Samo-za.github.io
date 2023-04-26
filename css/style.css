@@ -52,11 +52,8 @@ h2 {
     text-align: center;
     color: #9EF8EE;
     width: 38%;
-    margin: auto;
+    margin: 2.5rem auto;
     padding: 0.5rem;
-}
-h2 {
-    padding-left: 0.5rem;
 }
 p {
     padding-left: 1rem;
@@ -160,4 +157,8 @@ section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+}
+section blockquote{
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 9rem;
 }
