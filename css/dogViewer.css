@@ -1,0 +1,101 @@
+/*general*/
+* {
+   box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+}
+.wrapper {
+    margin: 0 0 2rem 0;
+    padding: 0 2rem;
+}
+
+/*nav list items*/
+nav {
+    background-color: #EBB655;
+    color:#6d3f07;
+    padding: 2rem 4rem;
+    margin: 0;
+}
+nav ul {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.breeds {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    color:#6d3f07;
+}
+.styling {
+    border-top: 0.4rem solid #6d3f07;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom: 0.4rem solid #6d3f07;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: bisque;
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.dog-img {
+    border-radius: 33%;
+    max-width: 80%;
+    height: auto;
+    display: none;
+    box-shadow: 13px 5px 26px 5px #EBB655;
+
+}
+@keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+}
+.spinner {
+    font-size: 50px;
+    text-align: center;
+    animation: 2s spin linear infinite;
+    display: none;
+}
+.show {
+    display: block;
+}
+
+/*footer*/
+p {
+    padding-left: 1rem;
+    width: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #6d3f07;
+}
+a:link {
+    text-decoration: none;
+    color: #FA7F08;
+}
+a:visited {
+    color: #F24405;
+    font-weight: normal;
+    font-style: oblique;
+    text-decoration: underline
+}
+a:hover {
+    color: #22BABB;
+    text-decoration: underline;
+    font-style: oblique;
+}

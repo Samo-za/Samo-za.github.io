@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My hobbies</title>
-
+    <title>Currency conversion</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
@@ -33,36 +33,37 @@
             </ul>
         </nav>
 
-        <h2>My hobbies</h2>
+        <h2>Quick help with currency conversion<br>
+            € -> HRK</h2>
+        <p>
+            <label for="tryOut">Enter price here:</label>
+            <input type="tel" id="tryOut" name="price" placeholder="€">
+        </p>
+   
+        <button type="button" onclick="toHRK()">Convert!</button><br><br>
 
-        <section>
-            <p><img src="img/blog1.jpg" width="180" height="180" alt="cute alien eating popcorn." title="Cute alien eating popcorn"></p>
-                        
-            <blockquote>
-                <p>Some smart person said a <strong>realy smart thing</strong></p>
-                <cite>Smart person</cite><br><br>
-            </blockquote>
-        </section>
+        <p id="demo"></p>
         
-        <p>These are my <strong>favourite</strong> hobbies. There are some more, but at the moment I think these are on <em>top list:</em></p>
-            <ul>
-                <li>playing <a href="https://en.wikipedia.org/wiki/Football" target="_blank">football</a></li>
-                <li>playing <a href="https://en.wikipedia.org/wiki/Guitar" target="_blank">guitar</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Woodworking" target="_blank">woodworking</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Cycling" target="_blank">biking</a></li>
-                <li>solving <a href="https://en.wikipedia.org/wiki/Puzzle">puzzles</a>
-                </li>
-            </ul>
-                
+        <script>
+        //let x = document.getElementById("tryOut").value;
+        //ovo treba iću i funkciju
+        // primjer sa poljem za unos i gubmom koji izvršava funkciju vidi na https://www.w3schools.com/js/tryit.asp?filename=tryjs_throw_error
+        
+        document.getElementById("demo").innerHTML = 
+        "The price of product is: " + toHRK(1) + " kn";        
+        
+        function toHRK(euro) {
+            return euro * 7.53450;
+        }
+        </script>
+            
         <footer>
-            <p>Visit my <a href="index.html">Home</a> page and my <a href="about.html">About</a> page.</p>
-            <p>Need help with <strong>currency conversion</strong>? Feel free to use this simple <a href="currency conversion.html">converter.</a></p>
+            <p>Visit my <a href="index.html">Home</a> page, <a href="my hobbies.html">My hobbies</a> page and my <a href="about.html">About</a> page.</p>
 
             <a href="#top">back to TOP</a>
         </footer>
-        
     </div>
-    
+    <!--    <script src="js/converter.js"></script>     -->
     <script src="https://unpkg.com/popmotion@8.5.0/dist/popmotion.js"></script>
     <script src="js/logo.js"></script>
 </body>

@@ -16,11 +16,11 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="no bckgrndcl">
-                <a href="index.html"><img src="img/logo.png" alt="CK's blog"></a>
+            <div>
+                <img src="img/logo.png" alt="KC's blog" class="brand">
             </div>
             <div>
-                <h1>KC's blog</h1>
+                <h1><a href="index.html">KC's blog</a></h1>
             </div>
         </header>
         <nav>
@@ -30,6 +30,7 @@
                 <li><a href="photography.html">Photography</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="currency conversion.html">Converter</a></li>
             </ul>
         </nav>
 
@@ -66,16 +67,20 @@
             <br>
                 <label for="subscribe"><input type="checkbox" value="checkbox" id="subscribe" checked>Add me to your email list!</label>
         </fieldset>
-        <button>Submit</button>
+        <button class="submit-button">Submit</button>
     </form>
     </section>
         <br><br>
         <footer>
             <p>Visit my <a href="index.html">Home</a> page, <a href="my hobbies.html">My hobbies</a> page and my <a href="about.html">About</a> page.</p>
+            <p>Need help with <strong>currency conversion</strong>? Feel free to use this simple <a href="currency conversion.html">converter.</a></p>
                 
             <a href="#top">back to TOP</a>
         </footer>
 
     </div>
+    
+    <script src="https://unpkg.com/popmotion@8.5.0/dist/popmotion.js"></script>
+    <script src="js/logo.js"></script>
 </body>
 </html>
