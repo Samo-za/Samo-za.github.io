@@ -30,48 +30,46 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="currency conversion.html">Converter</a></li>
-                <li><a href="Bert's-currency conversion.html">Converter_v2</a></li>
             </ul>
         </nav>
 
         <h2>Quick help with currency conversion<br>
             € -> HRK</h2>
         <p>
-            <label for="price">Enter price here:</label>
-            <input type="tel" id="price" name="price" placeholder="€">
+            <label for="tryOut">Enter price here:</label>
+            <input type="tel" id="tryOut" name="price" placeholder="€">
         </p>
    
-        <button type="button" onclick="convert()">Convert!</button><br><br>
+        <button type="button" onclick="convert">Convert!</button><br><br>
 
         <p id="demo"></p>
         
         <script>
+        //let x = document.getElementById("tryOut").value;
+        //ovo treba iću i funkciju
         // primjer sa poljem za unos i gubmom koji izvršava funkciju vidi na https://www.w3schools.com/js/tryit.asp?filename=tryjs_throw_error
         
-        // prema primjeru ovo treba ići u funkciju:
-            //let x = document.getElementById("price").value;
+        function displayHrkValue(hrkValue){
+            document.getElementById("demo").innerHTML = 
+                "The price of product is: " + hrkValue + " kn";        
+        }
+        displayHrkValue(1);
         
         function convert(event){
-        const price = document.getElementById("price");
-        if(!price){
-            return null;
-        }
-        const euro = +price.value
-        const hrk = toHRK(euro);
-        displayResult(hrk);
-        }
-
-        function toHRK(userInputValue) {
-            return userInputValue * 7.53450;
+            /*const maybeInputElement = document.querySelector("input[type=tel]");*/
+            const maybeInputElement = document.getElementById("tryOut");
+            if(!maybeInputElement){
+                // TODO alert("nema inputa provjeri html")
+                return null;
+            }
+            const eurValue = +maybeInputElement.value;
+            const hrkValue = toHRK(eurValue);
+            displayHrkValue(hrkValue)
         }
 
-        function displayResult (hrk) {
-        document.getElementById("demo").innerHTML = 
-        "The price of product is: " + hrk + " kn";        
+        function toHRK(euro) {
+            return euro * 7.53450;
         }
-        displayResult(1)
-      
-
         </script>
             
         <footer>
