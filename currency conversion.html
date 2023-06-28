@@ -40,7 +40,7 @@
             <input type="tel" id="tryOut" name="price" placeholder="€">
         </p>
    
-        <button type="button" onclick="toHRK()">Convert!</button><br><br>
+        <button type="button" onclick="convert">Convert!</button><br><br>
 
         <p id="demo"></p>
         
@@ -49,9 +49,24 @@
         //ovo treba iću i funkciju
         // primjer sa poljem za unos i gubmom koji izvršava funkciju vidi na https://www.w3schools.com/js/tryit.asp?filename=tryjs_throw_error
         
-        document.getElementById("demo").innerHTML = 
-        "The price of product is: " + toHRK(1) + " kn";        
+        function displayHrkValue(hrkValue){
+            document.getElementById("demo").innerHTML = 
+                "The price of product is: " + hrkValue + " kn";        
+        }
+        displayHrkValue(1);
         
+        function convert(event){
+            /*const maybeInputElement = document.querySelector("input[type=tel]");*/
+            const maybeInputElement = document.getElementById("tryOut");
+            if(!maybeInputElement){
+                // TODO alert("nema inputa provjeri html")
+                return null;
+            }
+            const eurValue = +maybeInputElement.value;
+            const hrkValue = toHRK(eurValue);
+            displayHrkValue(hrkValue)
+        }
+
         function toHRK(euro) {
             return euro * 7.53450;
         }
