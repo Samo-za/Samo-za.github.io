@@ -42,7 +42,7 @@
    
         <button type="button" onclick="convert()">Convert!</button><br><br>
 
-        <p id="demo"></p>
+        <p id="result"></p>
         
         <script>
         // primjer sa poljem za unos i gubmom koji izvršava funkciju vidi na https://www.w3schools.com/js/tryit.asp?filename=tryjs_throw_error
@@ -50,27 +50,26 @@
         // prema primjeru ovo treba ići u funkciju:
             //let x = document.getElementById("price").value;
         
-        function convert(event){
-        const price = document.getElementById("price");
-        if(!price){
-            return null;
-        }
-        const euro = +price.value
-        const hrk = toHRK(euro);
-        displayResult(hrk);
-        }
+        // function convert(event){
+        // const price = document.getElementById("price");
+        // if(!price){
+        //     return null;
+        // }
+        // const euro = +price.value
+        // const hrk = toHRK(euro);
+        // displayResult(hrk);
+        // }
 
-        function toHRK(userInputValue) {
-            return userInputValue * 7.53450;
-        }
+        // function toHRK(userInputValue) {
+        //     return userInputValue * 7.53450;
+        // }
 
-        function displayResult (hrk) {
-        document.getElementById("demo").innerHTML = 
-        "The price of product is: " + hrk + " kn";        
-        }
-        displayResult(1)
+        // function displayResult (hrk) {
+        // document.getElementById("result").innerHTML = 
+        // "The price of product is: " + hrk + " kn";        
+        // }
+        // displayResult(1)
       
-
         </script>
             
         <footer>
@@ -79,7 +78,7 @@
             <a href="#top">back to TOP</a>
         </footer>
     </div>
-    <!--    <script src="js/converter.js"></script>     -->
+       <script src="js/converter.js"></script>    
     <script src="https://unpkg.com/popmotion@8.5.0/dist/popmotion.js"></script>
     <script src="js/logo.js"></script>
 </body>
