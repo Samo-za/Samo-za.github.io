@@ -40,7 +40,7 @@ const listItem = document.querySelectorAll("li");
 const numOfItems = listItem.length;
 
 header.innerHTML = `My Cart (${numOfItems} items)`;
-
+*/
 
 
 
@@ -58,4 +58,4 @@ const createHeader = () => {
   header.innerHTML = `My Cart (${numOfItems} items)`;
 };
 window.addEventListener("load", createHeader());
-*/
+
