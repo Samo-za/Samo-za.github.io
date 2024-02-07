@@ -9,5 +9,3 @@ export function initCartHeader() {
 
   header.innerHTML = `My Cart (${numberOfItems} items)`;
 }
-
-export default initCartHeader;
