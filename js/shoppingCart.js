@@ -27,35 +27,3 @@ function scrollDownButton() {
     behavior: "smooth",
   });
 }
-
-/*
-//////////////////////// OVAKO JE BILO INICIJALNO /////////////////////////
-
-// create header on top of cart-items container with number of items in list
-const cartItems = document.querySelector(".cart-items");
-const header = document.createElement("h2");
-cartItems.insertBefore(header, cartItems.firstChild);
-
-const listItem = document.querySelectorAll("li");
-const numOfItems = listItem.length;
-
-header.innerHTML = `My Cart (${numOfItems} items)`;
-
-
-
-///////////////////// PO UZORU NA PROJEKT ZA OSIGURAČE /////////////////////
-
-// create header on top of cart-items container with number of items in list
-const createHeader = () => {
-  const cartItems = document.querySelector(".cart-items");
-  const header = document.createElement("h2");
-  cartItems.insertBefore(header, cartItems.firstChild);
-  
-  const listItem = document.querySelectorAll("li");
-  const numOfItems = listItem.length;
-  
-  header.innerHTML = `My Cart (${numOfItems} items)`;
-};
-window.addEventListener("load", createHeader());
-
-*/

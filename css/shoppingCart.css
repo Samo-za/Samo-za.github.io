@@ -92,7 +92,7 @@ ul {
   scrollbar-width: none; /* for Firefox */
 }
 
-.last-ul-item {
+li:last-child {
   border-bottom: 1px solid #1e2633;
 }
 
