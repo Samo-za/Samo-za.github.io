@@ -17,3 +17,11 @@ function showSummaryEstimate() {
 function confirmClickedElement() {
   console.log("That's it 😉");
 }
+
+const ul = document.querySelector(".main-ul");
+
+ul.addEventListener("click", function (e) {
+  if (e.target.className === "cancel") {
+    e.target.closest("LI").remove();
+  }
+});
