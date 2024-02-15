@@ -81,7 +81,7 @@ header li a:hover {
 }
 
 .menu-item {
-  background: url(../img/slash.png) no-repeat 0 0;
+  background: url(../img/car_parts/slash.png) no-repeat 0 0;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -92,7 +92,7 @@ header li a:hover {
 .menu-item:hover {
   color: #e0872c;
   cursor: pointer;
-  background: url(../img/slash_orange.png) no-repeat 0 0;
+  background: url(../img/car_parts/slash_orange.png) no-repeat 0 0;
 }
 
 .slash {
